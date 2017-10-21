@@ -6,7 +6,6 @@ import registerServiceWorker from './registerServiceWorker';
 import { createStore } from 'redux';
 import Home2 from './Home2';
 
-
 const reducer = (state , action) =>{
   switch (action.type) {
     case "ADD":

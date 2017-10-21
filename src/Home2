@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import Fetch from 'react-fetch'
 
 class Home2 extends Component {
   render(){
     return(
+    <div>
       <Fetch url="https://mysafeinfo.com/api/data?list=presidents&format=json">
         <test/>
       </Fetch>
+
+      <button onClick> Get Data </button>
+      <button onClick> Clear </button>
+    </div>
     )
   }
 }
